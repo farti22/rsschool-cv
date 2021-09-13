@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#exp">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#edu">Education</a></li>
+          <li><a href="#lang">Languages</a></li>
+          <li><a href="#code">Code Example</a></li>
+        </ul>
+      </nav>
+      <div class="header-avatar">
+        <img class="avatar" src="./images/avatar.jpg" alt="Avatar">
+        <h1 class="header-text">Artur Mazanik</h1>
+      </div>
+    </header>
+    <section id="about" class="about primary left">
+      <h2 style="margin:0;">About me</h2>
+      <p>I live in Minsk, and dream to becoming a professional and demended developer.
+        My current level of knowledge, it seems to me, is quite small, but it motivates
+        me to explore everything new and unknown. My dream is to become a team lead,
+        I love to help people and solve problems together. I like to eat tasty,
+        so I learn to cook tasty. Also I like to write sad poems, they help to leave
+        my negative emotions and move forward. I believe that even if you choose the wrong path,
+        you can still return.</p>
+        <div class="video"><p>Video none :(</p></div>
+    </section>
+    <section id="contacts" class="secondary right">
+      <h2>Contacts</h2>
+      <ul class="contacts">
+        <li class="contact"><img src="./images/mail.png" alt="E-mail"><a href="mailto:artur.maza33@gmail.com"><p>artur.maza33@gmail.com</p></a></li>
+        <li class="contact"><img src="./images/telegram.png" alt="Telegram"><a href="https://t.me/F295828105"><p>Telegram</p></a></li>
+        <li class="contact"><img src="./images/discord.png" alt="Discord"><a href="http://localhost:5500/#exp"><p>F21-A#1246</p></a></li>
+        <li class="contact">+375295581863</li>
+      </ul>
+    </section>
+    <section id="exp" class="secondary left">
+      <h2>Experience</h2>
+      <div class="exps">
+        <div
+          class="exp selected"
+          data-desc="At that time, I was creating servers in the Garrys Mod.
+          I had a need for self-written scripts. I created the UI, news system,
+          changed limb system, made the administration menu, and a lot of small scripts."
+          data-img="lua"
+        >
+          <h3>Gmod Scripts / Lua </h3>
+          <p>(2017-2019)</p>
+        </div>
+        <div
+          class="exp"
+          data-desc="A small discord bot, with the functions of which we lacked,
+          namely schedule, a random photo of groupmates, weather, holidays, and the like."
+          data-img="njs"
+        >
+          <h3>Discord Bot / JS</h3>
+          <p>(2020-2021)</p>
+        </div>
+        <div
+          class="exp"
+          data-desc="Course work on the creation of a virtual bank management system.
+          Written in pure C++. Works with employees, clients, bank cards and transactions."
+          data-img="cpp"
+        >
+          <h3>Coursework / C++</h3>
+          <p>(2021)</p>
+        </div>
+      </div>
+      <p class="desc">At that time, I was creating servers in the Garrys Mod.
+        I had a need for self-written scripts. I created the UI, news system,
+        changed limb system, made the administration menu, and a lot of small scripts.</p>
+      <img src="./images/exp/lua.gif" class="exp-img" alt="Dymanic experience image">
+    </section>
+    <section id="skills" class="primary right">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li data-percent="65">HTML/CSS</li>
+        <li data-percent="70">JS</li>
+        <li data-percent="80">C++</li>
+        <li data-percent="30">SQL</li>
+        <li data-percent="50">Lua</li>
+      </ul>
+    </section>
+    <section id="edu" class="primary left">
+      <h2>Education</h2>
+      <ul>
+        <li>Stepik - helped me get on my feet in terms of the basics of programming</li>
+        <li>College - gave me knowledge of the basics of OOP, C++ and JS (Minsk State College of Electronics, Technician-programmer (2020-to date))</li>
+        <li>learn.javascript.ru - told me what kind of beast it is, this JavaScript</li>
+        <li>YouTube -  opened my eyes and I saw what is a frameworks, middleware, containerization, principles (for example, SOLID) and more</li>
+      </ul>
+      <mark>These resources help me become better - JavaScript.Ninja, VueSchool, Metanit, MDN Web Docs</mark>
+    </section>
+    <section id="lang" class="secondary right">
+      <h2>Languages</h2>
+      <ul>
+        <li>Belarusian (Native)</li>
+        <li>Russian (Native)</li>
+        <li>English (A2)</li>
+      </ul>
+    </section>
+    <section id="code" class="code-section">
+      <h2>Code Example</h2>
+      <pre>
+      <code class="javascript">
+class Duck {
+  constructor(name, status) {
+    this.name = name;
+    this.status = status;
+  }
+}
+
+class DuckWorker extends Duck {
+    constructor(name, status, func) {
+        super(name, status)
+        this.stamina = 2;
+        this.work = func;
+    }
+}
+
+function workFactory(){
+    console.log(`${this.name} works hard`);
+
+    if (this.stamina > 0) {
+      this.stamina--;
+    } else {
+      console.log(`${this.name} very tired :{`)
+      this.status = ""
+    }
+}
+
+function sleep(){
+    console.log(`${this.name} quack...`);
+    this.stamina++;
+}
+
+let someWeirdDuck = new DuckWorker("Vlad", "Worker", workFactory)
+someWeirdDuck.work(); // Vlad work hard
+someWeirdDuck.work(); // Vlad work hard
+someWeirdDuck.work(); // Vlad very tired :{
+sleep.call(someWeirdDuck); // Vlad quack...
+someWeirdDuck.work(); // Vlad work hard
+      </code>
+    </pre>
+    </section>
+    <footer>
+      <a href="https://rs.school/js/">
+        <img class="rss-logo" src="https://rs.school/images/rs_school_js.svg" alt="RSS logo">
+      </a>
+      <a href="https://github.com/farti22">
+        <img class="github-logo" src="./images/github.png" alt="GitHub logo">
+      </a>
+    </footer>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
