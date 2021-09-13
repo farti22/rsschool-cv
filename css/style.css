@@ -1,0 +1,218 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.3em;
+  background: rgb(255,255,255);
+background: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(169,208,155,1) 100%);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 1rem 12%;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+section {
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  transition: 0.5s;
+  box-shadow: 0px 0px 12px 3px rgba(17, 97, 60, 0.2);
+}
+section h2{
+  text-align: center;
+}
+
+mark {
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+}
+
+
+h2 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(17, 97, 60);
+}
+.header-avatar {
+  display: flex;
+  align-items: center;
+  margin: 6rem 2rem;
+}
+
+.header-text {
+  font-size: 3em;
+  color: rgb(17, 97, 60);
+}
+.header-text {
+  position: relative;
+  left: 60px;
+}
+.header-text::after{
+  content: "/ / Web-developer";
+  color: gray;
+  display: block;
+  font-size: 0.75em;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 8px solid rgb(231, 231, 231);
+  height: 300px;
+  width: 300px;
+  transition: transform 1s;
+}
+.avatar:hover {
+  transform: rotate(390deg);
+}
+
+.about {
+  text-align: center;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.video {
+  background: white;
+  border-radius: 6px;
+  color: rgb(0, 0, 0);
+  min-width: 530px;
+  min-height: 300px;
+  display: flex;
+  margin: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.primary {
+  color: rgb(241, 241, 241);
+  background-color: rgb(17, 97, 60);
+  margin: 1em;
+}
+.left.primary {
+  margin-right: -3em;
+}
+.left.secondary {
+  margin-right: 5em;
+}
+.right.primary{
+  margin-left: -3em;
+}
+.right.secondary {
+  margin-left: 5em;
+}
+.secondary {
+  margin: 1em;
+  color: rgb(17, 97, 60);
+}
+
+.contacts {
+  padding: 0;
+  margin: 0;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  padding: 6px 12px;
+  margin: 6px;
+}
+.contact:hover {
+  padding: 4px 0px;
+  border: 2px solid rgb(17, 97, 60);
+  border-radius: 6px
+}
+.contact img {
+  margin-top: 20px;
+  max-height: 64px;
+}
+
+.exps {
+  display: flex;
+  justify-content: space-around;
+  user-select: none;
+}
+.exp {
+  padding: 6px 14px;
+  border-radius: 12px;
+}
+.exp:hover {
+  border: 2px solid rgb(17, 97, 60);
+  padding: 4px 12px;
+}
+.exp.selected {
+  background-color: rgb(17, 97, 60);
+  color: white;
+
+}
+.exp p {
+  margin-top: 0;
+  font-size: 0.8em;
+  text-align: center;
+}
+.exp h3 {
+  margin-bottom: 0;
+}
+.exp-img {
+  max-width: 760px;
+}
+
+.skills {
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+.skills li{
+  margin: 20px 0;
+  padding: 6px;
+  border-radius: 4px;
+  color:rgb(17, 97, 60);
+}
+
+.code-section {
+  grid-column: 1 / 3;
+  margin: 1em;
+  color: rgb(17, 97, 60);
+}
+
+footer {
+  background-color: rgb(255, 255, 255, 197);
+  padding: 1em;
+  margin: 1em;
+  grid-column: 1 / 3;
+  border-radius: 6px;
+  box-shadow: 0px 0px 12px 3px rgba(17, 97, 60, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+footer .rss-logo, footer .github-logo  {
+  height: 80px;
+  max-height: 80px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: right;
+}
+.nav-list li {
+  padding: 1em;
+  list-style-type: none;
+}
+
+.nav-list li a:hover {
+  font-weight: bolder;
+}
